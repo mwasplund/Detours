@@ -1,4 +1,4 @@
-Name: 'Detours'
+Name: 'detours'
 Language: 'C++|0'
 Version: 4.0.14
 TargetSystems: [

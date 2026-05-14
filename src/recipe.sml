@@ -1,6 +1,6 @@
 Name: 'Detours'
 Language: 'C++|0'
-Version: 4.0.14
+Version: 4.0.15
 TargetSystems: [
 	'Win32'
 ]

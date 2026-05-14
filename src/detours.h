@@ -925,11 +925,12 @@ SOUP_EXPORT VOID CALLBACK DetourFinishHelperProcess(_In_ HWND,
 
 #ifndef SOUP_INTERNAL
 
-SOUP_EXPORT template<typename T>
+SOUP_EXPORT {
+template<typename T>
 struct DetoursIsFunctionPointer : std::false_type {};
-
-SOUP_EXPORT template<typename T>
+template<typename T>
 struct DetoursIsFunctionPointer<T*> : std::is_function<typename std::remove_pointer<T>::type> {};
+}
 
 SOUP_EXPORT template<
     typename T,
